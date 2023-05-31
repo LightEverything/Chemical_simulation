@@ -1,6 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>image/press.png</file>
+        <file>image/principle_table.png</file>
         <file>image/slider_press.png</file>
+        <file>image/power_meter.png</file>
     </qresource>
 </RCC>

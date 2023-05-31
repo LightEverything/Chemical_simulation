@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1493</width>
-    <height>656</height>
+    <height>900</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,14 @@
    <layout class="QVBoxLayout" name="verticalLayout_4">
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="page_achieve">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -46,7 +52,7 @@
               <property name="geometry">
                <rect>
                 <x>50</x>
-                <y>430</y>
+                <y>520</y>
                 <width>50</width>
                 <height>64</height>
                </rect>
@@ -56,7 +62,7 @@
               <property name="geometry">
                <rect>
                 <x>230</x>
-                <y>430</y>
+                <y>520</y>
                 <width>50</width>
                 <height>64</height>
                </rect>
@@ -69,8 +75,8 @@
              <widget class="QPushButton" name="pb_start_button">
               <property name="geometry">
                <rect>
-                <x>120</x>
-                <y>520</y>
+                <x>70</x>
+                <y>590</y>
                 <width>75</width>
                 <height>24</height>
                </rect>
@@ -86,48 +92,195 @@
               <property name="geometry">
                <rect>
                 <x>10</x>
-                <y>40</y>
+                <y>30</y>
                 <width>121</width>
-                <height>381</height>
+                <height>461</height>
                </rect>
               </property>
               <property name="text">
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>:/image/press.png</pixmap>
+               <pixmap resource="resource.qrc">:/image/press.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
               </property>
              </widget>
              <widget class="QLabel" name="lb_press_upper">
               <property name="geometry">
                <rect>
                 <x>190</x>
-                <y>40</y>
+                <y>30</y>
                 <width>121</width>
-                <height>381</height>
+                <height>461</height>
                </rect>
               </property>
               <property name="text">
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>:/image/press.png</pixmap>
+               <pixmap resource="resource.qrc">:/image/press.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
               </property>
              </widget>
              <widget class="QLabel" name="lb_move_slider_press_lower">
               <property name="geometry">
                <rect>
-                <x>233</x>
-                <y>310</y>
-                <width>41</width>
-                <height>31</height>
+                <x>244</x>
+                <y>370</y>
+                <width>21</width>
+                <height>21</height>
                </rect>
               </property>
               <property name="text">
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>:/image/slider_press.png</pixmap>
+               <pixmap resource="resource.qrc">:/image/slider_press.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_move_slider_press_upper">
+              <property name="geometry">
+               <rect>
+                <x>64</x>
+                <y>370</y>
+                <width>21</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="resource.qrc">:/image/slider_press.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pb_record">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>190</x>
+                <y>630</y>
+                <width>75</width>
+                <height>24</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>记录实验</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pb_stop">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>180</x>
+                <y>590</y>
+                <width>91</width>
+                <height>24</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>终止当前实验</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="le_hf">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>710</y>
+                <width>113</width>
+                <height>21</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_4">
+              <property name="geometry">
+               <rect>
+                <x>50</x>
+                <y>710</y>
+                <width>53</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>当前Hf</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pb_draw">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>120</x>
+                <y>670</y>
+                <width>75</width>
+                <height>24</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>绘制图表</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pb_getData">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>70</x>
+                <y>630</y>
+                <width>81</width>
+                <height>24</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>观察当前现象</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_press_upper_show">
+              <property name="geometry">
+               <rect>
+                <x>50</x>
+                <y>490</y>
+                <width>53</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>0.0</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_press_lower_show">
+              <property name="geometry">
+               <rect>
+                <x>230</x>
+                <y>490</y>
+                <width>53</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>0.0</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
               </property>
              </widget>
             </widget>
@@ -143,8 +296,8 @@
              <widget class="QDial" name="dl_frequency_ctrl">
               <property name="geometry">
                <rect>
-                <x>240</x>
-                <y>240</y>
+                <x>230</x>
+                <y>320</y>
                 <width>50</width>
                 <height>64</height>
                </rect>
@@ -157,7 +310,7 @@
               <property name="geometry">
                <rect>
                 <x>110</x>
-                <y>360</y>
+                <y>500</y>
                 <width>75</width>
                 <height>61</height>
                </rect>
@@ -173,7 +326,7 @@
               <property name="geometry">
                <rect>
                 <x>230</x>
-                <y>360</y>
+                <y>500</y>
                 <width>75</width>
                 <height>61</height>
                </rect>
@@ -189,7 +342,7 @@
               <property name="geometry">
                <rect>
                 <x>360</x>
-                <y>360</y>
+                <y>500</y>
                 <width>75</width>
                 <height>61</height>
                </rect>
@@ -205,7 +358,7 @@
               <property name="geometry">
                <rect>
                 <x>120</x>
-                <y>450</y>
+                <y>600</y>
                 <width>53</width>
                 <height>16</height>
                </rect>
@@ -221,7 +374,7 @@
               <property name="geometry">
                <rect>
                 <x>250</x>
-                <y>450</y>
+                <y>600</y>
                 <width>53</width>
                 <height>16</height>
                </rect>
@@ -237,7 +390,7 @@
               <property name="geometry">
                <rect>
                 <x>380</x>
-                <y>450</y>
+                <y>600</y>
                 <width>53</width>
                 <height>16</height>
                </rect>
@@ -249,17 +402,87 @@
                <set>Qt::AlignCenter</set>
               </property>
              </widget>
-             <widget class="QLabel" name="label_4">
+             <widget class="QLabel" name="lb_frequency_show">
               <property name="geometry">
                <rect>
-                <x>50</x>
-                <y>20</y>
-                <width>431</width>
-                <height>221</height>
+                <x>20</x>
+                <y>30</y>
+                <width>461</width>
+                <height>261</height>
                </rect>
               </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="resource.qrc">:/image/power_meter.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLCDNumber" name="lcd_frequency">
+              <property name="geometry">
+               <rect>
+                <x>140</x>
+                <y>100</y>
+                <width>221</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pb_to_qusetion">
+              <property name="geometry">
+               <rect>
+                <x>410</x>
+                <y>690</y>
+                <width>91</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>完成实验</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_n0">
+              <property name="geometry">
+               <rect>
+                <x>130</x>
+                <y>405</y>
+                <width>101</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_n1">
+              <property name="geometry">
+               <rect>
+                <x>350</x>
+                <y>405</y>
+                <width>91</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string/>
               </property>
              </widget>
             </widget>
@@ -269,12 +492,588 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="page_start">
+      <widget class="QWidget" name="page_introduce_videos">
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
          <widget class="StartVideoWidget" name="wg_start_video" native="true"/>
         </item>
        </layout>
+      </widget>
+      <widget class="QWidget" name="page_introduce_text">
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>461</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>40</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>实验介绍：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>140</y>
+          <width>811</width>
+          <height>561</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>33</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>气液反应是化学反应过程和传质过程相结合的复杂过程，在设计气液反应器时，不仅要考虑到影响化学反应的诸因素, 同时也必须考虑影响传质过程的诸因素。本实验就是在一定的几何尺寸和一定型的搅拌鼓泡釜内，通过改变进气量和搅拌速度，观察釜中气液两相流动状况和分散特性，并通过测定气含率，来表征传质状况的变化，为气液反应的放大提供重要参数。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>100</y>
+          <width>521</width>
+          <height>691</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>image/machinery.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_start_test">
+        <property name="geometry">
+         <rect>
+          <x>1380</x>
+          <y>610</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>开始实验</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_principle">
+        <property name="geometry">
+         <rect>
+          <x>1380</x>
+          <y>660</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>实验原理</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_warning">
+        <property name="geometry">
+         <rect>
+          <x>1380</x>
+          <y>710</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>注意事项</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_view_videos">
+        <property name="geometry">
+         <rect>
+          <x>1380</x>
+          <y>760</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>观看介绍视频</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_signup">
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>160</y>
+          <width>611</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>35</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>登录检查系统</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>390</y>
+          <width>81</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>姓名：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>560</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>学号：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>410</y>
+          <width>401</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>570</y>
+          <width>401</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_signup_test">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>670</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>以练习模式登录</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_signup_exam">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>670</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>以考试模式登录</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_warning">
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>461</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>40</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>注意事项：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>1401</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>1、实验开始与结束前，正确开启与关闭各个电气开关；
+2、出气量调节不宜大于4.0 m³/h；
+3、搅拌速度n不能高于460 r/min，避免转速过高将釜打破；
+4、为得到实验所需数据，达到相应的实验目的，实验开始时需设定一个出气量（数值位于0~4之间），固定该出气量值改变转速4~7次，记录为一组实验数据。改变出气量重复上述步骤，进行下一组实验数据的记录。
+</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_return_2">
+        <property name="geometry">
+         <rect>
+          <x>1340</x>
+          <y>700</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>返回实验介绍</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_principle">
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>461</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>40</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>实验原理：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>811</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>在工业生产中，气液反应一般属于液膜传质控制。在一定的进气量u0G 下，对一定的桨型要有相应的转速n才能使气体分散成均匀的小气泡，当搅拌强度足够大时，观察釜内两相流动的工况大致可分为五个区，即：浮升区、上旋区、喷出区、下旋区和无泡区。对于不同物系的结果表明，气含率ε（ε=(Hf-H0)/Hf，H0─静液层高度25cm，Hf ─ 通气时液层高度。）随通气量及转速的变化具有相似的规律性。以水─空气系统为例气含率的典型曲线几乎呈“S”型，见图。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>350</y>
+          <width>801</width>
+          <height>481</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>我们可以把 n 与ε曲线分为三个区域：（1）完全气泛区；（2）过渡区；（3）均匀分散区。从完全气泛区到过渡区，随着 n的增加，ε 开始增加较快，这时气泡已基本上被均匀粉碎，并在旋转的作用下，偏向器壁迂回再逸出液面，并出现了部分上旋的涡流。我们把桨叶基本上能使气体均匀分散所需的最低转速称为临界转速 n0。当从过渡区进入分散区以后，如继续增加转速，气含率变化不大，釜内已没有聚并产生的大气泡，流动平缓，不再出现腾涌，桨下几乎没有清流层，釜内气泡大小比较均匀，气液两相成为均匀 的混合体，气泛消失，桨叶已能完全将气体粉碎了。反之，高转速逐渐降低时， 当到达某一转速范围，气含率便显著下降，桨叶附近开始出现清流层，釜内有大气泡直冲液面而爆破，这时开始出现腾涌或气泛。我们把出现或消失气泛现象时的转速定为泛点转速 n’</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>120</y>
+          <width>571</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resource.qrc">:/image/principle_table.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_return">
+        <property name="geometry">
+         <rect>
+          <x>1340</x>
+          <y>710</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>返回实验介绍</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_question">
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>541</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>40</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>实验报告：（思考题）</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_answer">
+        <property name="geometry">
+         <rect>
+          <x>1330</x>
+          <y>680</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查看答案</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>1381</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>在工业生产中，气液反应一般属于液膜传质控制。在一定的进气量u0G 下，对一定的桨型要有相应的转速n才能使气体分散成均匀的小气泡，当搅拌强度足够大时，观察釜内两相流动的工况大致可分为五个区，即：浮升区、上旋区、喷出区、下旋区和无泡区。对于不同物系的结果表明，气含率ε（ε=(Hf-H0)/Hf，H0─静液层高度25cm，Hf ─ 通气时液层高度。）随通气量及转速的变化具有相似的规律
+1、鼓泡釜的工作原理是什么？该装置有什么优缺点？
+2、在实验过程中哪些因素易造成实验误差？
+3、在实际生产中，为了获得最佳气含率和最优的传质条件，应该怎样选择搅拌釜的转速？
+4、根据实际结果 n0～u0G及 n’～u0G 基本上是什么关系？
+性。以水─空气系统为例气含率的典型曲线几乎呈“S”型，见图。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_answer">
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>681</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>40</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>实验报告答案：（思考题）</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>1381</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>1、工作原理：鼓泡釜为圆柱形，内存有一定量液体，气体从下部多孔花板下方通入，穿过花板时被分散成细小的气泡，在花板上形成一层鼓泡层，使气液间有很大的接触面
+优点：装置简单，造价低，易于防腐蚀；气液接触时间长，利于慢速反应的化学吸收
+缺点：空塔气速低，不适宜处理大气量气体；液层厚，压力损失大，能耗高
+
+2、(1) 对气泡大小与破碎程度的判断
+   （2）实验过程中鼓泡釜内液面晃动程度大，该现象会对Hf的读数产生一定影响，造成读数与实际Hf产生一定偏差，进而影响气含率的计算
+
+3、理论上，转速越大，气含率越大，比相界面积也会越大，传质速率越大，但转速过大釜内会产生大量气泡直冲液面爆破，出现腾涌或气泛现象。因此实际生产中，在不超过泛点转速的情况下，尽可能加大转速。
+
+4、将实际结果的误差纳入考虑范围，n0和n’都随u0G的增加而增加。
+</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_quit">
+        <property name="geometry">
+         <rect>
+          <x>1340</x>
+          <y>680</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>退出程序</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lb_error">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>550</y>
+          <width>611</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_pre">
+        <property name="geometry">
+         <rect>
+          <x>1340</x>
+          <y>610</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>前一页</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lb_score">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>540</y>
+          <width>211</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>60</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lb_show">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>640</y>
+          <width>101</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_start">
+       <widget class="QPushButton" name="pb_start">
+        <property name="geometry">
+         <rect>
+          <x>1374</x>
+          <y>720</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>开始实验</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>
@@ -306,6 +1105,8 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
